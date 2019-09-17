@@ -1,0 +1,166 @@
+body,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+body {
+  display: flex;
+  background-color: #292c34;
+  color: #b9b9b9;
+  font-family: "Verdana";
+}
+
+.default-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.left-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.right-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.title-container {
+  font-size: 58px;
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bold {
+  color: #c89664;
+  text-decoration: underline;
+}
+
+.bio-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  min-width: 255px;
+  margin-top: 25px;
+}
+
+.social-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.social-text {
+  font-size: 22px;
+}
+
+.big-one-liner {
+  font-size: 52px;
+}
+
+.progress-indicator {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* SCREEN SHOTS AND GIFS */
+
+.employers-image {
+  width: 338px;
+  height: 451px;
+}
+
+.iot-demo {
+  width: 260px;
+  height: 398px;
+}
+
+.create-element {
+  width: 656px;
+  height: 389px;
+}
+
+.destroy-element {
+  width: 670px;
+  height: 290px;
+}
+
+.array-element {
+  width: 635px;
+  height: 336px;
+}
+
+.hof-fruits {
+  width: 510px;
+  height: 542px;
+}
+
+.render-elements {
+  width: 540px;
+  height: 494px;
+}
+
+.render-functions {
+  width: 625px;
+  height: 141px;
+}
+
+.render-localstorage {
+  width: 542px;
+  height: 428px;
+}
+
+.comp-error-son {
+  width: 458px;
+  height: 579px;
+}
+
+.hello-code-js {
+  width: 647px;
+  height: 421px;
+}
+
+.role-models {
+  width: 543px;
+  height: 440px;
+}
+
+.app-ception {
+  width: 530px;
+  height: 180px;
+}
