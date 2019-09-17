@@ -150,7 +150,7 @@ function addContent(type, content) {
 
 function addProgress(state) {
   const app = document.getElementById("app");
-  // const progressIndicator = document.createElement("p");
+  const progressIndicator = document.createElement("p");
   const progressIndicatorNode = document.createTextNode(
     state.slide + 1 + "/" + slides.length
   );
