@@ -3,19 +3,19 @@ p {
   margin: 0;
 }
 
+body {
+  display: flex;
+  background-color: #292c34;
+  color: #b9b9b9;
+  font-family: "Verdana";
+}
+
 h1 {
   font-size: 58px;
 }
 
 h2 {
   font-size: 32px;
-}
-
-body {
-  display: flex;
-  background-color: #292c34;
-  color: #b9b9b9;
-  font-family: "Verdana";
 }
 
 .default-container {

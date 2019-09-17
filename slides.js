@@ -328,7 +328,7 @@ const slides = [
   {
     number: 14,
     layout: "verticalSplit",
-    type: "screenshotAndText",
+    type: "screenshotAndTitleSubtitle",
     content: {
       leftContent: {
         element: "img",
@@ -341,7 +341,14 @@ const slides = [
           element: "h1",
           class: "",
           text: "Higher Order Functions"
-        }
+        },
+        subtitle: [
+          {
+            element: "h2",
+            class: "",
+            text: "Image from: atendesigngroup.com"
+          }
+        ]
       }
     }
   },
