@@ -187,46 +187,6 @@ const slides = [
   },
   {
     number: 8,
-    layout: "verticalSplit",
-    type: "textandScreenshot",
-    content: {
-      leftContent: {
-        title: {
-          element: "h1",
-          class: "",
-          text: "Employment History"
-        }
-      },
-      rightContent: {
-        element: "img",
-        class: "employers-image",
-        source: "./assets/employers.png",
-        alt: "Logos of Daplie, Edquity and MX"
-      }
-    }
-  },
-  {
-    number: 9,
-    layout: "verticalSplit",
-    type: "textandScreenshot",
-    content: {
-      leftContent: {
-        title: {
-          element: "h1",
-          class: "",
-          text: "The Project that Led to this Talk"
-        }
-      },
-      rightContent: {
-        element: "img",
-        class: "iot-demo",
-        source: "./assets/iot-demo.gif",
-        alt: "Gif showing IOT demo"
-      }
-    }
-  },
-  {
-    number: 10,
     layout: "default",
     type: "titleSubtitle",
     content: {
@@ -245,7 +205,34 @@ const slides = [
     }
   },
   {
-    number: 11,
+    number: 9,
+    layout: "verticalSplit",
+    type: "titleSubtitleandScreenshot",
+    content: {
+      leftContent: {
+        title: {
+          element: "h1",
+          class: "",
+          text: "Functional HTML Rendering"
+        },
+        subtitle: [
+          {
+            element: "h2",
+            class: "",
+            text: "A Blank Canvas"
+          }
+        ]
+      },
+      rightContent: {
+        element: "img",
+        class: "blank-canvas",
+        source: "./assets/blank-canvas.png",
+        alt: "Example code of an empty HTML document"
+      }
+    }
+  },
+  {
+    number: 10,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -272,7 +259,7 @@ const slides = [
     }
   },
   {
-    number: 12,
+    number: 11,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -299,7 +286,7 @@ const slides = [
     }
   },
   {
-    number: 13,
+    number: 12,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -326,7 +313,7 @@ const slides = [
     }
   },
   {
-    number: 14,
+    number: 13,
     layout: "verticalSplit",
     type: "screenshotAndTitleSubtitle",
     content: {
@@ -353,7 +340,7 @@ const slides = [
     }
   },
   {
-    number: 15,
+    number: 14,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -380,7 +367,7 @@ const slides = [
     }
   },
   {
-    number: 16,
+    number: 15,
     layout: "verticalSplit",
     type: "screenshotAndTitleSubtitle",
     content: {
@@ -407,7 +394,7 @@ const slides = [
     }
   },
   {
-    number: 17,
+    number: 16,
     layout: "verticalSplit",
     type: "screenshotAndTitleSubtitle",
     content: {
@@ -434,7 +421,7 @@ const slides = [
     }
   },
   {
-    number: 18,
+    number: 17,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -461,7 +448,7 @@ const slides = [
     }
   },
   {
-    number: 19,
+    number: 18,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -488,7 +475,7 @@ const slides = [
     }
   },
   {
-    number: 20,
+    number: 19,
     layout: "default",
     type: "titleSubtitle",
     content: {
@@ -507,7 +494,7 @@ const slides = [
     }
   },
   {
-    number: 21,
+    number: 20,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -534,7 +521,7 @@ const slides = [
     }
   },
   {
-    number: 22,
+    number: 21,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -561,7 +548,47 @@ const slides = [
     }
   },
   {
+    number: 22,
+    layout: "verticalSplit",
+    type: "textandScreenshot",
+    content: {
+      leftContent: {
+        title: {
+          element: "h1",
+          class: "",
+          text: "Employment History"
+        }
+      },
+      rightContent: {
+        element: "img",
+        class: "employers-image",
+        source: "./assets/employers.png",
+        alt: "Logos of Daplie, Edquity and MX"
+      }
+    }
+  },
+  {
     number: 23,
+    layout: "verticalSplit",
+    type: "textandScreenshot",
+    content: {
+      leftContent: {
+        title: {
+          element: "h1",
+          class: "",
+          text: "The Project that Led to this Talk"
+        }
+      },
+      rightContent: {
+        element: "img",
+        class: "iot-demo",
+        source: "./assets/iot-demo.gif",
+        alt: "Gif showing IOT demo"
+      }
+    }
+  },
+  {
+    number: 24,
     layout: "default",
     type: "titleSubtitle",
     content: {
@@ -580,7 +607,7 @@ const slides = [
     }
   },
   {
-    number: 24,
+    number: 25,
     layout: "verticalSplit",
     type: "textandScreenshot",
     content: {
@@ -600,7 +627,7 @@ const slides = [
     }
   },
   {
-    number: 25,
+    number: 26,
     layout: "default",
     type: "bigOneLiner",
     content: {
@@ -612,7 +639,7 @@ const slides = [
     }
   },
   {
-    number: 26,
+    number: 27,
     layout: "default",
     type: "thankYou",
     content: {
