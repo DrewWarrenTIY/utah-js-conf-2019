@@ -1,34 +1,4 @@
-
-Arc:
-
-Introduction
-Boot Camp Grad and UtahJS member for 3 yrs
-What will I get wrong?
-Synopsis of the talk
-Who will benefit? JSers can think React. Reacters can think JS.
-Framework Free: I love React but Vue and Angular are awesome too
-Functional Programming
-Vanilla*
-Employment History - Help People
-The project that spawned the idea
-SPAs vs MPAs
-Create an element
-Destroy an element
-Create elements from an Array of objects
-Higher Order Functions
-Home-brewed render function
-State: Array of Functions
-State: LocalHost
-Why? Useful errors
-Why? Readability (for all)
-Why? Ownership
-Why? Your role models did this
-When? Simple Applications
-Challenge: Don't reach for your favorite Framework
-I want to see it on UtahJS
-What did I get wrong?
-Thank you
-
+Pres:
 
 
 1:
@@ -37,7 +7,7 @@ Hello everyone! I am thrilled to be here at this conference sponsored by my favo
 
 I owe this community so much and am so excited for the opportunity to contribute to this experience.
 
-My name is Drew Warren and my talk is titled "Framework Free: Functional HTML Rendering and State Management in Vanilla JS", so if you're looking for "JavaScript: The Hard Parts" or advice on optimizing your Angular app, you are in the wrong theater!
+My name is Drew Warren and my talk is titled "Framework Free: Functional HTML Rendering and State Management in Vanilla JS", so if you're looking for advice on optimizing your Angular app, you are in the wrong place!
 
 If you want to hear about how your habits and prejudice might be getting in the way of your engagement with JavaScript, then stick around and I'll try to keep you entertained for the next half hour.
 
@@ -45,17 +15,11 @@ If you want to hear about how your habits and prejudice might be getting in the 
 
 This is my face. This is my Twitter handle and this is my username on the UtahJS Slack Org.
 
-Who here is in the UtahJS Slack? Go to slack.utahjs.com, put in your e-mail and join. You will not regret it.
+Who here is not in the UtahJS Slack? Go to slack.utahjs.com, put in your e-mail and join. You will not regret it.
 
 You'll get help with your code in "how do I do x", you'll get advice on interviewing and comp negotiation on "career talk". You'll find invaluable resources on specific subsections in the countless channels. You will level up just from lurking... and might even find some friends. It's amazing.
 
 Like I've said before, I owe this community so much and am always looking for a way to give back, so please @ me, slide into my DMs or start a thread in "accessibility" and I'll be in touch.
-
-Before we move on I did want to touch on one last thing. As I said in my introduction, I'm just a guy who wants all of us to make the world a better place.
-
-Joel Denning, who is a fantastic human being and will be talking about React after lunch (I'll see you there) recently gave a talk about how our ability to code is a Superpower and I couldn't agree more. We'll circle back to that.
-
-However, he also said quote "you don't have to have a neck beard" end quote to make an impact and while this may be true... I think it might help.
 
 3:
 
@@ -91,7 +55,7 @@ It's gonna be rad.
 
 Who will benefit from this talk? Hopefully everyone here will learn something, but I have two specific groups in mind.
 
-The first group of folks are perhaps leisurely self-taught, or hobbyists. Or maybe a die-hard JS fanatic who shivers when you hear ECMAScript and thinks the language peaked in 2015.
+The first group of folks are perhaps self-taught, or hobbyists. Or maybe a die-hard JS fanatic who shivers when you hear the word ECMAScript and thinks the language peaked in 2015.
 
 These folks are either resisting frameworks intentionally or they are intimidated by the learning curve. Maybe you gave it a shot and it just didn't "click".
 
@@ -109,7 +73,7 @@ I'm hoping if your sights are aimed low and you aren't looking at Frameworks or 
 
 6:
 
-ACCESSIBILITY TIP #1: Don't convey information with only color. As you can see here I've highlighted my text with orange, or maybe you can't see that because you have achromatopsia, a severe color blindness that makes you only able to see black, white and grey. There's an underline here to give that same information.
+ACCESSIBILITY TIP #1: Don't convey information with only color. WCAG 1.4.1. As you can see here I've highlighted my text with orange, or maybe you can't see that because you have achromatopsia, a severe color blindness that makes you only able to see black, white and grey. That's why there's an underline here to convey that same information.
 
 So I want to take a few minutes to establish some vocabulary and give context into what I mean with the title of my talk. First, what do I mean when I say "Framework Free". What is a framework?
 
@@ -145,9 +109,9 @@ That's my 30 second lesson on Functional Programming. I highly encourage you to 
 
 8:
 
-My definition of "Vanilla JS" for the purpose of this talk means JavaScript that can be run in any major browser.
+My definition of "Vanilla JS" for the purpose of this talk means JavaScript that can be run in any major browser with no compiling or importing.
 
-I know that we engineers tend to be a bit pedant and while this trait is not my wife's favorite of mine, I do believe that in order to understand each other, we have to say what we mean.
+I know that we engineers tend to be a bit pedantic and while this trait is not my wife's favorite of mine, I believe that in order to understand each other, we have to say what we mean.
 
 So I want to be very clear, the DOM APIs we're discussing are not "JavaScript". The DOM was actually designed to be independent of any one programming language.
 
@@ -161,12 +125,6 @@ Quick Disclaimer: The DOM is inherently Object Oriented, so unfortunately you're
 
 So again - Vanilla JS means JavaScript that can run in any major browser. No build step, no compiler, no webpack, no babel needed.
 
-For the record, I have always resisted using the term "Vanilla" to describe something as plain.
-
-Vanilla orchids can only be grown naturally in very specific climates and Vanilla was one of the most rare and exotic flavors for many years before it started being artificially synthesized. Did you know that less than 1% of vanilla flavor comes from actual vanilla orchids.
-
-I highly encourage you to DuckDuckGo the phrase "Vanilla and Beavers".
-
 9:
 
 One last bit of vocabulary and then we'll start looking at some code.
@@ -177,11 +135,11 @@ I'm sure most of you have heard of a "Single Page App", but it's important to un
 
 A Single Page App is just that, an application that exists on a single page. You have one HTML file and rather than routing to other HTML files, you use JavaScript to update the HTML.
 
-One of the benefits is that all of the resources of an app can be loaded once. Further actions of the user won't trigger another load. Once an SPA is loaded, you can theoretically disconnect from the internet and continue to use the application and go from view to view.
+One of the benefits is that all of the resources of an app can be loaded once. Further actions of the user won't trigger another load. Once an SPA is loaded, you can theoretically disconnect from the internet and continue to use the application to go from view to view.
 
 This does lead to a longer initial load time, which is a tradeoff. Some other tradeoffs can come in the form of SEO or Search Engine Optimization, browser history behavior like whether your back button works, and of course if a user disables JavaScript the app won't work.
 
-There are workarounds, meta tags for SEO, url parameter manipulation if you want that back button and no script tags to try and at least tell your user to enable JS.
+There are workarounds, meta tags can help with SEO, url parameter manipulation if you want that back button and no script tags to try and at least tell your user to enable JS.
 
 These are some things to consider before deciding whether an SPA is the right choice for your app... but if it is... let's talk about how to make one.
 
@@ -189,7 +147,7 @@ These are some things to consider before deciding whether an SPA is the right ch
 
 First we need our blank canvas. As you can see here, we've got a nearly empty HTML file.
 
-A title, a link to a stylesheet, a script to load our JS and an empty body tag. I've added an id of "app" to the body but it's self closing with no content.
+A title, a link to a stylesheet, a script to load our JS and an empty body tag. I've given it an id of "app" but as you can see it's self closing with no content.
 
 Completely Blank.
 
@@ -207,15 +165,15 @@ So we've got this blank canvas and now we want to put something on there. Let's 
 
 As with most things in development, there are many ways to get this done, but here are two methods to wet your whistle.
 
-So I've got this app in another tab and we'll take a look, but just understand there was an interim step where I functionally added a container div with the class ".js-hello-container"
+Not shown, but I functionally added a container div with the class ".js-hello-container"
 
-In our first function here we're calling document.querySelector to target this container div by its class name and set it to a variable.
+In our first function, we're calling document.querySelector to target this container div by its class name and set it to a variable.
 
 Then we're calling document.createElement to create a paragraph element and setting that to a variable.
 
 Next we set the className property of the element. This lets us add a class. "Class" is a reserved keyword in JavaScript, which is why the property is called className.
 
-Next we call createTextNode with a string. This returns a text node that contains that string. This is really complex stuff and I am amazed by your brilliance if you're still following me.
+Next we call the createTextNode function with a string. This returns a text node that contains that string. This is really complex stuff and I am amazed by your brilliance if you're still following me.
 
 Penultimately we append our text node to our paragraph element and finally we append our paragraph element to our container div using the element's "appendChild" method.
 
@@ -227,7 +185,7 @@ In this second function we take a different approach. We create the element as a
 
 There is an innerHTML property that will go inside the tags. This is kind of like adding a text node.
 
-On the other hand, outerHTML is a one-stop shop for applying an id, a class, an event handler, or a data attribute. It will set the the tags themselves as well as what's inside the.
+On the other hand, outerHTML is a one-stop shop for applying an id, a class, an event handler, or a data attribute. It will set the the tags themselves as well as anything inside them.
 
 Any valid HTML string in here is going to work. In this example I'm transforming an empty div to a heading level 1 with a class name and text node. Then I append it to my container.
 
@@ -245,46 +203,49 @@ I have not been able to find an understanding of why the first function is faste
 
 If you know why this is, please reach out to me. I'm sorry.
 
-13:
-
 Alright so we're adding elements and we're removing elements, but this doesn't look any better than writing raw HTML. You're asking yourself "Why the heck would I want to write 3 or 4 functions to get a single line of HTML?"
+
+13:
 
 Here's where composition comes back into play. So we've got our function that does one thing. Well instead of one string we want to show in HTML, what if we have an array of strings. We can pass our functions into a higher order function like the map method available on Arrays to return an HTML element for each value in the array.
 
 So here instead of making 1 element by writing 3 functions, we're making 4 elements by writing 4 functions. What if we want 40 elements? How about 400?
 
-Did you know that there are roughly 6,500 spoken languages in the world today?
+Did you know that there are roughly 6,500 spoken languages in the world today? You can render them all with these four functions.
 
 Now I hope you're not asking yourself why the heck you would want to do this anymore.
 
-So let's say we have our 6,500 greetings and instead of divs we want them rendered as LI elements. We just got back from a talk about accessibility and we learned that semantic HTML is important for users who depend on screen readers. (That was accessibility tip #2)
+So let's say we have our 6,500 greetings and instead of divs we want them rendered as LI elements. We just got back from a talk about accessibility and we learned that semantic HTML is important for users who depend on screen readers and that semantic HTML elements come with all sorts of accessibility benefits right out of the box. (That was accessibility tip #2)
 
 All we do is change our container to a "ul" and then that one parameter from "div" to "li" and our work is done.
 
+Easy, right?
+
 14:
 
-I'm not going to spend much time at all here, but I don't want to leave anyone behind, so if you haven't used a "map" function on an array before, or if you heard me say "Higher Order Function" and you thought "pikachu-what-face.jpg" then let's catch you up real quick.
+I'm not going to spend too much time here, but I don't want to leave anyone behind, so if you haven't used a "map" function on an array before, or if you heard me say "Higher Order Function" and you thought "pikachu-what-face.jpg" then let's catch you up real quick.
 
-At its core, a Higher order function is a function that takes a function as at least one of its parameters. This parameter function is often referred to as a callback function.
+At its core, a Higher order function is a one that takes a function as a parameter. This parameter function is often referred to as a callback.
 
-You can build your own higher order functions to do all sorts of wonderful things like pipe-lining functions, mapping, flat mapping and all sorts of other combinators that will blow your mind.
+You can build your own higher order functions to do all sorts of wonderful things like piping, mapping, flat mapping and all sorts of combinators that will blow your mind.
 
-One of my favorites is to take an array of objects and return an object whose keys are some value from the objects (like an id) and the value is the object itself. This object is often called a "dictionary" because it let's you easily lookup the objects with something like dictionary.id.
+One of my favorites is to take an array of objects and return an object whose keys are some value from the objects (like an id) and the value is the object itself. This object structure is often called a "dictionary" because it lets you easily lookup the objects with something like dictionary.id.
 
-There are a few that are now natively included in JavaScript as Array methods here: map, filter and reduce.
+There are a few that are natively included in JavaScript as Array methods demonstrated here: map, filter and reduce.
 
 My favorite explanation of these is this nifty graphic from an article on atendesigngroup.com.
 
-Map will take an array of values and give you an array of the same length with some action being performed on each value. Like taking an apple and giving you a slice of an apple, or taking a string and giving you an HTML element wrapping that string.
+Map will take an array of values and give you a new array of the same length with some action being performed on each value. Like taking an apple and giving you a slice of an apple, or taking a string and giving you an HTML element wrapping that string.
 
-Filter will take an array and give you an array of objects that pass a certain boolean check. Like taking an apple, an orange and a banana and giving you back just the ones that are an apple. Or taking an array of greeting strings and giving you just ones that are "Hello"
+Filter will take an array and give you a new array of objects that pass a certain boolean check. Like taking an apple, an orange and a banana and giving you back just the ones that are an apple. Or taking an array of greeting strings and giving you just ones that are "Hello"
 
-Reduce will take an array and give you something new by taking an action on each item. Like taking three fruits and returning one fruit salad. Or turning an array of objects into a dictionary object.
+Reduce will take an array and give you something new by performing an action on each item. Like taking three fruits and returning one fruit salad. Or turning an array of objects into a dictionary object.
 
+Higher Order Functions really are the bread and butter of taking data structures and returning HTML.
 
 15:
 
-I've probably said the word "render" about 30 times at this point.
+I've probably said the word "render" about a dozen times at this point.
 
 The Oxford dictionary will give you the following definition for the word, render:
 "To cause to be or become; to make".
@@ -339,15 +300,15 @@ Okay, now we know how to use VanillaJS to make SPAs... but why?
 
 Was this purely an academic endeavor? Did our quest to find out of we could eclipse our responsibility to ask if we should?
 
-I have an opinion on this: No!
+No!
 
 There are some objective benefits as well some subjective ones that you'll get if you go framework free.
 
 First, Errors. Let's compare the console error we get when we try to reference an undefined variable in JS and in ReactJS.
 
-We see at the top here the message tells us the line on which the error occurred, the function called that reached the error, the function that called that function and where that function was called. Succinct, accurate, meaningful.
+We see at the top here the message tells us the line on which the error occurred, the function called that reached the error, the function that called that function and the line that function was called on. Succinct, accurate, meaningful.
 
-If you have experience with React, I'm sure you've already found the relevant information but I doubt you can tell me with a straight face that you prefer the bottom.
+If you have experience with React, I'm sure you've already found the relevant information in this bottom message but I doubt you can tell me with a straight face that you prefer it to the top one.
 
 19:
 
@@ -365,35 +326,31 @@ Finally a user can actually inspect your page and find your files. Not a minifie
 
 This could be a high school student that dreams of dabbling with development. This could be a potential contributor who finds a bug and shoots you the exact line number, without having to first find you on github. This could be another dev that really likes a technique you implemented and learns directly from the source how to emulate it.
 
-20:
-
-The next benefit is more speculative, but maybe it will strike a chord with you.
-
-I find that there's an element of pride that comes from building something from scratch. When you know that you took a raw material and worked it into something useful, I think you're going to get a level of satisfaction that you won't find when you buy something pre-fabricated.
-
-How am I supposed to be proud of "my code" when I didn't write 39,000 out of 39,500 lines?
-
-This idea was challenged recently that the Ownership rabbit hole is very deep. I didn't invent the processor, the computer, the browser, the language, the text editor, so can I really claim ownership to the code I wrote using it all?
-
-And I will submit to this slippery slope argument, but at some level, there is a point at which you can make an impact with only your own work.
-
-I find it very empowering going into my terminal and typing mkdir, touch index.html, touch scripts.js and I'm off to the races.
+That's how we're going to make the world a better place. With readable, accessible approachable code.
 
 21:
 
+Your role models did this. Probably.
+
+These are some of my dev role models. I asked them if they used Vanilla JS.
+
 AJ - Taught me that newer isn't always better.
 
-Tanner - Taught me how helpful stripping away the boilerplate so others can step in can be
+Tanner - Taught me how to help other developers
 
-Kyle - Made me think about what we've lost by not being able to inspect the source
+Kyle - Lamented about what we've lost by not being able to inspect the source
 
-Kent - Taught me how to best leverage React when I got into complex territory
+Kent - Taught me patterns for using and testing React that I applied to this talk
 
 22:
 
-When not: Lot's of Async, Animations, shared state
+So we've talked about how, we've talked about why, but when should you drop your framework in favor of Vanilla JS?
 
-When: Local Business, Simple Application, Conference Presentation
+I'll be honest. Not that often.
+
+If you have lot's of Asynchronous, Animations, shared state across different parts of your app, you will benefit greatly from something like React, Angular or Vue.
+
+When: Maybe you want to help a Local Business market themselves, Maybe you have an idea for Simple Application that can make an impact, Maybe you want to make a slide show for a Conference Presentation. Check it out
 
 23:
 

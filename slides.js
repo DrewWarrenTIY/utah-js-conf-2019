@@ -476,25 +476,6 @@ const slides = [
   },
   {
     number: 19,
-    layout: "default",
-    type: "titleSubtitle",
-    content: {
-      title: {
-        element: "h1",
-        class: "",
-        text: "Why?"
-      },
-      subtitle: [
-        {
-          element: "h2",
-          class: "",
-          text: "Ownership"
-        }
-      ]
-    }
-  },
-  {
-    number: 20,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -521,7 +502,7 @@ const slides = [
     }
   },
   {
-    number: 21,
+    number: 20,
     layout: "verticalSplit",
     type: "titleSubtitleandScreenshot",
     content: {
@@ -548,7 +529,7 @@ const slides = [
     }
   },
   {
-    number: 22,
+    number: 21,
     layout: "verticalSplit",
     type: "textandScreenshot",
     content: {
@@ -568,7 +549,7 @@ const slides = [
     }
   },
   {
-    number: 23,
+    number: 22,
     layout: "verticalSplit",
     type: "textandScreenshot",
     content: {
@@ -588,7 +569,7 @@ const slides = [
     }
   },
   {
-    number: 24,
+    number: 23,
     layout: "default",
     type: "titleSubtitle",
     content: {
@@ -607,7 +588,7 @@ const slides = [
     }
   },
   {
-    number: 25,
+    number: 24,
     layout: "verticalSplit",
     type: "textandScreenshot",
     content: {
@@ -627,7 +608,7 @@ const slides = [
     }
   },
   {
-    number: 26,
+    number: 25,
     layout: "default",
     type: "bigOneLiner",
     content: {
@@ -639,7 +620,7 @@ const slides = [
     }
   },
   {
-    number: 27,
+    number: 26,
     layout: "default",
     type: "thankYou",
     content: {
