@@ -328,7 +328,7 @@ This could be a high school student that dreams of dabbling with development. Th
 
 That's how we're going to make the world a better place. With readable, accessible approachable code.
 
-21:
+20:
 
 Your role models did this. Probably.
 
@@ -342,7 +342,7 @@ Kyle - Lamented about what we've lost by not being able to inspect the source
 
 Kent - Taught me patterns for using and testing React that I applied to this talk
 
-22:
+21:
 
 So we've talked about how, we've talked about why, but when should you drop your framework in favor of Vanilla JS?
 
@@ -352,27 +352,27 @@ If you have lot's of Asynchronous, Animations, shared state across different par
 
 When: Maybe you want to help a Local Business market themselves, Maybe you have an idea for Simple Application that can make an impact, Maybe you want to make a slide show for a Conference Presentation. Check it out
 
-23:
+22:
 
 Find a way to improve the world. If you're lucky it will be your job. If you aren't finding that at your job, it's time to start your side project.
 
-24:
+23:
 
 Don't fall into my trap! I wish I had React for this
 
-25:
+24:
 
 I challenge you
 
-26:
+25:
 
 I want to see it!
 
-27:
+26:
 
 Corrections, Misrepresentations. The last thing I want to do is point someone down the wrong path. Sharing knowledge is noble, sharing lies is evil.
 
-28:
+27:
 
 Thank you, UtahJS for the chance to speak. Thank you all for spending the last half hour with me. I hope to hear from you. Let's make the world a better place, together!
 
